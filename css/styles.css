@@ -70,8 +70,8 @@ body {
 
 .warning-box {
     width: 100%;
-    margin: 1px 12px;
-    padding: 1px 12px;
+    margin: 2px 12px;
+    padding: 2px 12px;
 }
 
 .warning {
@@ -153,7 +153,7 @@ textarea {
     font-weight: bolder;
     position: absolute;
     padding-left: 6%;
-    top: 66%;
+    top: 62%;
     width: 80%;
 }
 
@@ -162,93 +162,36 @@ textarea {
     font-weight: 400;
     position: absolute;
     padding-left: 6%;
-    top: 78%;
+    top: 72%;
     width: 80%;
 }
 
 
 /* media query */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:991px) {
     #text-input {
-        height: 40vh;
+        height: 42vh;
         width: 100%;
     }
     #text-input-resultado {
         height: 20vh;
         width: 100%;
     }
-    .container-text-area,
-    .container-text-resultado {
-        height: 30vh;
-    }
     .resultado-texto {
         padding-top: 0%;
     }
     .muneco img {
         display: none;
-    }
-    .muneco h5 {
-        top: 20%;
-    }
-    .muneco p {
-        top: 20%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    #text-input {
-        height: 40vh;
-        width: 100%;
-    }
-    #text-input-resultado {
-        height: 18vh;
-        width: 100%;
-    }
-    .resultado-texto {
-        padding-top: 0%;
-    }
-    .muneco img {
-        display: none;
-    }
-    .muneco h5 {
-        top: 20%;
-    }
-    .muneco p {
-        top: 60%;
-    }
-}
-
-@media screen and (max-width:991px) {
-    #text-input {
-        height: 40vh;
-        width: 100%;
-    }
-    #text-input-resultado {
-        height: 16vh;
-        width: 100%;
-    }
-    .resultado-texto {
-        padding-top: 0%;
-    }
-    .muneco img {
-        display: none;
-    }
-    .muneco h5 {
-        top: 40%;
-    }
-    .muneco p {
-        top: 60%;
     }
 }
 
 @media screen and (min-width:992px) {
-    .container-text-area,
     .container-text-area {
-        height: 100vh;
+        padding-top: 21%;
     }
     #text-input {
-        height: 64vh;
+        height: 56vh;
         width: 100%;
     }
     #text-input-resultado {
@@ -257,35 +200,5 @@ textarea {
     }
     .resultado-texto {
         padding-top: 0%;
-    }
-    .muneco h5 {
-        top: 68%;
-    }
-    .muneco p {
-        top: 76%;
-    }
-}
-
-@media screen and (min-width:1400px) {
-    .container-text-area,
-    .container-text-area {
-        height: 100vh;
-    }
-    #text-input {
-        height: 72vh;
-        width: 100%;
-    }
-    #text-input-resultado {
-        height: 96vh;
-        width: 100%;
-    }
-    .resultado-texto {
-        padding-top: 0%;
-    }
-    .muneco h5 {
-        top: 68%;
-    }
-    .muneco p {
-        top: 72%;
     }
 }
