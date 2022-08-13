@@ -169,29 +169,6 @@ textarea {
 
 /* media query */
 
-@media screen and (max-width:320px) {
-    #text-input {
-        height: 20vh;
-        width: 100%;
-    }
-    #text-input-resultado {
-        height: 20vh;
-        width: 100%;
-    }
-    .resultado-texto {
-        padding-top: 0%;
-    }
-    .muneco img {
-        display: none;
-    }
-    .muneco h5 {
-        top: 20%;
-    }
-    .muneco p {
-        top: 60%;
-    }
-}
-
 @media screen and (max-width:480px) {
     #text-input {
         height: 40vh;
@@ -217,7 +194,7 @@ textarea {
 
 @media screen and (max-width:768px) {
     #text-input {
-        height: 54vh;
+        height: 52vh;
         width: 100%;
     }
     #text-input-resultado {
@@ -238,13 +215,13 @@ textarea {
     }
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:991px) {
     #text-input {
         height: 40vh;
         width: 100%;
     }
     #text-input-resultado {
-        height: 24vh;
+        height: 16vh;
         width: 100%;
     }
     .resultado-texto {
@@ -261,22 +238,22 @@ textarea {
     }
 }
 
-@media screen and (min-width:1100px) {
+@media screen and (min-width:991px) {
     #text-input {
-        height: 70vh;
+        height: 64vh;
         width: 100%;
     }
     #text-input-resultado {
-        height: 90vh;
+        height: 93vh;
         width: 100%;
     }
     .resultado-texto {
         padding-top: 0%;
     }
     .muneco h5 {
-        top: 64%;
+        top: 70%;
     }
     .muneco p {
-        top: 70%;
+        top: 80%;
     }
 }
