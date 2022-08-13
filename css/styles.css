@@ -13,7 +13,7 @@ body {
 }
 
 .container-text-area {
-    padding-top: 120px;
+    padding-top: 16%;
     width: 100%;
 }
 
@@ -178,6 +178,10 @@ textarea {
         height: 20vh;
         width: 100%;
     }
+    .container-text-area,
+    .container-text-resultado {
+        height: 30vh;
+    }
     .resultado-texto {
         padding-top: 0%;
     }
@@ -188,13 +192,13 @@ textarea {
         top: 20%;
     }
     .muneco p {
-        top: 60%;
+        top: 20%;
     }
 }
 
 @media screen and (max-width:768px) {
     #text-input {
-        height: 52vh;
+        height: 40vh;
         width: 100%;
     }
     #text-input-resultado {
@@ -238,22 +242,50 @@ textarea {
     }
 }
 
-@media screen and (min-width:991px) {
+@media screen and (min-width:992px) {
+    .container-text-area,
+    .container-text-area {
+        height: 100vh;
+    }
     #text-input {
         height: 64vh;
         width: 100%;
     }
     #text-input-resultado {
-        height: 93vh;
+        height: 94vh;
         width: 100%;
     }
     .resultado-texto {
         padding-top: 0%;
     }
     .muneco h5 {
-        top: 70%;
+        top: 68%;
     }
     .muneco p {
-        top: 80%;
+        top: 76%;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .container-text-area,
+    .container-text-area {
+        height: 100vh;
+    }
+    #text-input {
+        height: 72vh;
+        width: 100%;
+    }
+    #text-input-resultado {
+        height: 96vh;
+        width: 100%;
+    }
+    .resultado-texto {
+        padding-top: 0%;
+    }
+    .muneco h5 {
+        top: 68%;
+    }
+    .muneco p {
+        top: 72%;
     }
 }
