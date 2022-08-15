@@ -30,7 +30,7 @@
                     <img class="logo" src="assets/img/alura-logo.svg" alt="" />
 
                     <div class="container-text-area">
-                        <textarea class="form-control ingreso-texto" placeholder="Ingrese el texto aquí" required></textarea>
+                        <textarea id="texto-ingresado" class="form-control ingreso-texto" placeholder="Ingrese el texto aquí" required></textarea>
                         <div class="row warning-box">
                             <i class="fas fa-exclamation-circle"></i>
                             <p class="warning">Solo letras minúsculas y sin acentos</p>
@@ -48,14 +48,16 @@
                 <div class="container-fluid__right">
                     <div class="container-text-resultado">
                         <!-- <textarea class="form-control resultado-texto" id="text-input-resultado" placeholder="" required></textarea> -->
-                        <div class="muneco">
+                        <p id="resultado-final"></p>
+                        <div id="texto-resultado" class="muneco">
                             <img src="assets/img/muñeco.svg" alt="muñeco-piola" />
                             <h5>Ningún mensaje fue encontrado</h5>
                             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                         </div>
-                        <div class="row buttons">
-                            <div class="col-12"></div>
-                        </div>
+
+                        <button id="btn-copiar" type="button" class="btn btn-copiar principal__btn">
+                Copiar
+              </button>
                     </div>
                 </div>
             </div>

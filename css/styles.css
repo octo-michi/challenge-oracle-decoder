@@ -47,8 +47,8 @@ textarea.ingreso-texto {
     margin-bottom: 10px;
 }
 
-
-.form-control::placeholder, .form-control {
+.form-control::placeholder,
+.form-control {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #0A3871;
     font-style: normal;
@@ -78,7 +78,7 @@ textarea.ingreso-texto {
 }
 
 .container-fluid__row {
-    display:  flex;
+    display: flex;
     justify-content: space-between;
     width: 100%;
 }
@@ -95,6 +95,7 @@ textarea.ingreso-texto {
 .container-fluid__right {
     width: 300px;
 }
+
 
 /* Advertencia */
 
@@ -149,6 +150,14 @@ textarea.ingreso-texto {
     border: 1px solid #0A3871;
 }
 
+.btn-copiar {
+    background: #D8DFE8;
+    border-radius: 14px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    display: none;
+}
+
 
 /* Resultado texto */
 
@@ -158,15 +167,15 @@ textarea {
 
 .container-text-resultado {
     margin-top: 20px;
-    padding:  0 20px;
+    padding: 0 20px;
     width: 100%;
-    height:  calc(100vh - 40px);
-    background:  white;
+    height: calc(100vh - 40px);
+    background: white;
     border-radius: 10px;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:  center;
+    align-items: center;
 }
 
 .resultado-texto {
@@ -250,16 +259,13 @@ textarea {
     .buttons {
         flex-direction: column;
     }
-
     .principal__btn {
         width: 100%;
         margin-bottom: 10px;
     }
-
     .principal__btn:last-child {
         margin-bottom: 0;
     }
-
     #text-input {
         width: 100%;
     }
@@ -286,11 +292,9 @@ textarea {
         flex-direction: column;
         height: calc(100vh - 20px);
     }
-
     .container-fluid {
         flex-direction: column;
     }
-
     .container-fluid__left {
         width: 100%;
         /*height:  calc(100vh - 140px);*/
@@ -298,43 +302,33 @@ textarea {
         padding-right: 0;
         flex: 1;
     }
-
     .container-fluid__right {
         width: 100%;
-        height:  auto;
+        height: auto;
         min-height: 100px;
         margin-top: 20px;
-
     }
-
     .container-fluid {
         width: 100%;
         padding: 0;
         margin: 0;
     }
-
     .container-text-resultado {
         height: 100%;
         margin: 0;
         padding: 10px 20px;
-
     }
-
     .container-text-area {
         padding: 0;
         width: 100%;
     }
-
     .buttons {
         width: 100%;
         margin: 0;
     }
-
     .warning-box {
         width: 100%;
     }
-
-
     #text-input {
         width: 100%;
     }
