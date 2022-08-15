@@ -23,57 +23,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-1 ol-md-12 col-sm-12">
-                <div class="box-logo">
-                    <img class="img-fluid" src="assets/img/alura-logo.svg" alt="" />
+    <main id="principal">
+        <div class="principal__container">
+            <div class="principal__content">
+                <div class="container-fluid__left">
+                    <img class="logo" src="assets/img/alura-logo.svg" alt="" />
+
+                    <div class="container-text-area">
+                        <textarea class="form-control ingreso-texto" placeholder="Ingrese el texto aquí" required></textarea>
+                        <div class="row warning-box">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p class="warning">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="row buttons">
+                            <button type="button" class="btn btn-encriptar principal__btn">
+                  Encriptar
+                </button>
+                            <button type="button" class="btn btn-desencriptar principal__btn">
+                  Desencriptar
+                </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12">
-                <div class="row">
-                    <div class="box-invisible col-sm-12 d-none d-lg-block"></div>
-                    <div class="col-sm-12">
-                        <div class="box-texto-entrada">
-                            <div class="box-botones">
-                                <textarea class="form-control ingreso-texto" id="text-input" placeholder="Ingrese el texto aquí" required></textarea>
-                                <div class="row warning-box">
-                                    <i class="fas fa-exclamation-circle"></i>
-                                    <p class="warning">Solo letras minúsculas y sin acentos</p>
-                                </div>
-                                <div class="row buttons">
-                                    <div class="col-lg-6 col-md-6 col-xs-12">
-                                        <button type="button" class="btn btn-encriptar">
-                        Encriptar
-                      </button>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-xs-12">
-                                        <button type="button" class="btn btn-desencriptar">
-                        Desencriptar
-                      </button>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="container-fluid__right">
+                    <div class="container-text-resultado">
+                        <!-- <textarea class="form-control resultado-texto" id="text-input-resultado" placeholder="" required></textarea> -->
+                        <div class="muneco">
+                            <img src="assets/img/muñeco.svg" alt="muñeco-piola" />
+                            <h5>Ningún mensaje fue encontrado</h5>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class="row buttons">
+                            <div class="col-12"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="box-texto-salida ">
-                    <textarea class="form-control resultado-texto " id="text-input-resultado" placeholder="" required></textarea>
-                    <div class="muneco d-none d-lg-block">
-                        <img src="assets/img/muñeco.svg" alt="muñeco-piola" />
-                        <h5>Ningún mensaje fue encontrado</h5>
-                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                    </div>
-                    <div class="row buttons">
-                        <div class="col-12"></div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    </div>
+    </main>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
