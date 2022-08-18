@@ -1,16 +1,15 @@
 function encriptar() {
     var textoIngresado = document.getElementById("texto-ingresado").value;
     if (textoIngresado != "") {
-        document.getElementById('texto-resultado').style.display = 'none';
-        document.getElementById('btn-copiar').style.display = 'block';
+        document.getElementById('muneco').style.display = 'none';
+        document.getElementById('resultado').style.display = 'flex';
         arreglo = codificarTextoIngresado(textoIngresado);
         document.getElementById("resultado-final").innerHTML = pasarATexto();
     } else {
         document.getElementById('resultado-final').innerHTML = textoIngresado;
-        document.getElementById('texto-resultado').style.display = 'block';
-        document.getElementById('btn-copiar').style.display = 'none';
+        document.getElementById('muneco').style.display = 'block';
+        document.getElementById('resultado').style.display = 'none';
     }
-
 }
 
 function pasarATexto() {
@@ -65,15 +64,14 @@ function codificar(letra) {
 function desencriptar() {
     var textoIngresado = document.getElementById("texto-ingresado").value;
     if (textoIngresado != "") {
-        document.getElementById('texto-resultado').style.display = 'none';
-        document.getElementById('btn-copiar').style.display = 'block';
+        document.getElementById('muneco').style.display = 'none';
+        document.getElementById('resultado').style.display = 'flex';
         arreglo = decodificarTextoIngresado(textoIngresado);
         document.getElementById("resultado-final").innerHTML = pasarATexto();
     } else {
         document.getElementById('resultado-final').innerHTML = textoIngresado;
-        document.getElementById('texto-resultado').style.display = 'block';
-        document.getElementById('btn-copiar').style.display = 'none';
-
+        document.getElementById('muneco').style.display = 'block';
+        document.getElementById('resultado').style.display = 'none';
     }
 }
 
@@ -113,18 +111,31 @@ function decodificar(letra) {
 
 function copiar() {
     var copyText = document.getElementById('resultado-final').innerHTML;
+
+    var copy = $('.copy_text').val();
+    $('.copy_text').select();
+    document.execCommand('copy');
     navigator.clipboard.writeText(copyText).then(() => {
-        alert("Copiado");
+        Swal.fire({
+            icon: 'success',
+            title: 'Copiado al portapapeles',
+            text: copy,
+            showConfirmButton: false,
+            timer: 2000
+        });
+        document.getElementById("texto-ingresado").value = "";
+        document.getElementById("texto-ingresado").focus();
     });
 }
 
 let arreglo = [];
+document.getElementById('resultado').style.display = 'none';
 
-var button = document.querySelector(".btn-encriptar");
+var button = document.querySelector('.btn-encriptar ');
 button.onclick = encriptar;
 
 var buttonDesencriptar = document.querySelector(".btn-desencriptar");
 buttonDesencriptar.onclick = desencriptar;
 
-var buttonCopiar = document.querySelector(".btn-copiar");
+var buttonCopiar = document.querySelector(".resultado__btn");
 buttonCopiar.onclick = copiar;
